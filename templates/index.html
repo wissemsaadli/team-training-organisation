@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>firdt templte</title>
-</head>
-<body>
-    sometnhohng
-</body>
-</html>
+{% extends 'base.html' %}
+{%block head%}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+{%endblock%}
+{%block body%}
+<div class="content">
+    <table class="table">
+        <tr>
+            <th>task </th>
+            <th>added</th>
+            <th>action</th>
+        </tr>
+        <tr>
+            <td>task </td>
+            <td>added</td>
+            <td>
+                <a href="">delete</a> <br>
+                <a href="">udpate</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+{%endblock%}
